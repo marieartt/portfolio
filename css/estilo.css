@@ -64,7 +64,7 @@ h1 {
 h2 {
     font-size: 2.5rem;
     font-weight: 400;
-    border-bottom: 2px solid #ff69b4;
+    border-bottom: 2px solid #D895B1;
     padding-bottom: 0.5rem;
     display: inline-block;
     color: #333;
@@ -107,7 +107,7 @@ p {
     font-size: 1rem;
 }
 .contact-form button {
-    background-color: #333;
+    background-color: #9B5372;
     color: #fff;
     padding: 1rem;
     border: none;
@@ -118,7 +118,7 @@ p {
     transition: background-color 0.3s ease;
 }
 .contact-form button:hover {
-    background-color: #ff69b4;
+    background-color: #D895B1;
 }
 footer {
     text-align: center;
@@ -152,4 +152,40 @@ footer {
    
 }
 
+/* Cabeçalho e rodapé sem bordas */
+.modal-header{
+    background-color: #9B5372; /* Cor rosê mais forte */
+    color: #ffffff;
+    border: none; /* Remove as bordas */
+}
+
+/* Estilo da modal */
+.modal-content {
+    background-color: #FFFFFF; /* Cor rosê suave */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: #5c2c2c; /* Texto rosê mais escuro */
+}
+
+.modal-footer {
+    background-color: #FFFFFF; /* Cor rosê mais forte */
+    color: #5c2c2c;
+    border: none; /* Remove as bordas */
+}
+
+/* Centralizar texto no título */
+.modal-title {
+    text-align: center;
+    width: 100%;
+}
+
+/* Botão rosê */
+.btn-primary {
+    background-color: #9B5372;
+    border-color: #e89c96;
+}
+.btn-primary:hover {
+    background-color: #d38881;
+    border-color: #d38881;
+}
 
