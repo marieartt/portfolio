@@ -152,34 +152,30 @@ footer {
    
 }
 
-/* Cabeçalho e rodapé sem bordas */
 .modal-header{
-    background-color: #9B5372; /* Cor rosê mais forte */
+    background-color: #9B5372;
     color: #ffffff;
-    border: none; /* Remove as bordas */
+    border: none;
 }
 
-/* Estilo da modal */
 .modal-content {
-    background-color: #FFFFFF; /* Cor rosê suave */
+    background-color: #FFFFFF;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    color: #5c2c2c; /* Texto rosê mais escuro */
+    color: #5c2c2c;
 }
 
 .modal-footer {
-    background-color: #FFFFFF; /* Cor rosê mais forte */
+    background-color: #FFFFFF;
     color: #5c2c2c;
-    border: none; /* Remove as bordas */
+    border: none;
 }
 
-/* Centralizar texto no título */
 .modal-title {
     text-align: center;
     width: 100%;
 }
 
-/* Botão rosê */
 .btn-primary {
     background-color: #9B5372;
     border-color: #e89c96;
