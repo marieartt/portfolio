@@ -1,97 +1,147 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Maria Anita Costa Borges</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilo.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Portfólio | Maria Anita Costa Borges</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Ícone padrão do toggler -->
+  <style>
+    /* Usa a SVG nativa do Bootstrap – evita imagem externa */
+    .navbar-toggler-icon {
+      background-image: url(
+        "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2851,51,51,.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"
+      );
+    }
+  </style>
+
+  <!-- Seu CSS principal -->
+  <link rel="stylesheet" href="css/estilo.css" />
 </head>
+
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <header>
-        <h1>Maria Anita Costa Borges</h1>
-        <h3>Designer UI/UX</h3>
-    </header>
+  <!-- ===== HEADER ===== -->
+  <header class="text-center">
+    <h1 class="fw-semibold">Maria Anita Costa Borges</h1>
+    <h3 class="mb-0">Designer UI/UX</h3>
+  </header>
 
-    <nav>
-        <ul>
-            <li><a href="#identificacao">Identificação</a></li>
-            <li><a href="#formacao">Formação</a></li>
-            <li><a href="#profissao">Atuação Profissional</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
+  <!-- ===== NAVBAR (Bootstrap) ===== -->
+  <nav class="navbar navbar-expand-md navbar-light bg-white sticky-top shadow-sm">
+    <div class="container">
+      <!-- Brand – não precisa, mas fica elegante -->
+      <a href="#" class="navbar-brand d-md-none fw-semibold"></a>
+
+      <!-- Toggler / hamburguer -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menu-principal"
+        aria-controls="menu-principal"
+        aria-expanded="false"
+        aria-label="Abrir navegação"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse justify-content-md-center" id="menu-principal">
+        <ul class="navbar-nav gap-md-3 text-center">
+          <li class="nav-item"><a class="nav-link" href="#identificacao">Identificação</a></li>
+          <li class="nav-item"><a class="nav-link" href="#formacao">Formação</a></li>
+          <li class="nav-item"><a class="nav-link" href="#profissao">Atuação Profissional</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
         </ul>
-    </nav>
+      </div>
+    </div>
+  </nav>
 
-    <main>
-        <section id="identificacao">
-            <h2>Identificação</h2>
-            <p>Estudante de Análise e Desenvolvimento de Sistemas, mas com uma forte paixão e apreço por Web Design, 
-                UX/UI Design e Front-end. Possuo habilidades em UI Responsiva e Componentes Responsivos, focadas em sempre 
-                melhorar a experiência do usuário! Familiarizada com ferramentas como Figma, HTML, CSS (de front-end).
-            </p>
-        </section>
-        
-        <section id="formacao">
-            <h2>Formação</h2>
-            <p>
-                Cursando Análise e Desenvolvimento de Sistemas na Faculdade UniProjeção, com previsão de formatura para 2026.
-                Atualmente me encontro no 3º semestre do curso.
-            </p>
-            <p>
-                Design UX/UI com Figma - Udemy (2024)
-            </p>
-            <p>
-                Inglês Avançado - Terra Serviços (2023)
-            </p>
-        </section>
+  <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+  <main class="container-lg py-4">
+    <!-- IDENTIFICAÇÃO -->
+    <section id="identificacao" class="mb-5">
+      <h2>Identificação</h2>
+      <p>
+        Estudante de Análise e Desenvolvimento de Sistemas, mas com forte paixão por Web Design,
+        UX/UI Design e Front-end. Possuo habilidades em UI Responsiva e Componentes Responsivos,
+        focadas em sempre melhorar a experiência do usuário. Familiarizada com ferramentas como
+        Figma, HTML e CSS.
+      </p>
+    </section>
 
-        <section id="profissao">
-            <h2>Atuação Profissional</h2>
-            <p>Atualmente trabalho como freelancer participando de projetos de design de interfaces e experiência de usuário (UX). 
-                Além disso, estou em busca de oportunidades de estágio para aplicar meus conhecimentos acadêmicos e pessoais em projetos reais.
-            </p>
-            <div class="projects-list">
-                <div class="project-item">
-                    <h3>App Saúde - Consult Midia</h3>
-                    <p>
-                        Aplicativo de saúde com foco em consultas médicas online, permitindo agendamento de consultas, 
-                        visualização de histórico médico e receitas, além de integração com dispositivos de saúde e biometria facial.
-                    </p>
-                </div>
-                <div class="project-item">
-                    <h3>Site de Personal Trainer - Miridan</h3>
-                    <p>
-                        Site para personal trainer, com informações sobre serviços, planos de treino, 
-                        dicas de saúde e alimentação, além de blog com artigos sobre treinos, saúde e feedbacks.
-                    </p>
-                </div>
-                <div class="project-item">
-                    <h3>Conecta Info - Atendimento ao Cliente</h3>
-                    <p>
-                        Vendas de acessórios para celulares, computadores e impressoras. Confecções de dcoumentos, 
-                        impressões e digitalizações. Pacote Office e atendimento ao cliente. 
-                    </p>
-                </div>
-            </div>
-        </section>
+    <!-- FORMAÇÃO -->
+    <section id="formacao" class="mb-5">
+      <h2>Formação</h2>
+      <p>
+        Cursando Análise e Desenvolvimento de Sistemas na Faculdade UniProjeção, com previsão de
+        formatura em 2026 (3º semestre).
+      </p>
+      <p>Design UX/UI com Figma – Udemy (2024)</p>
+      <p>Inglês Avançado – Terra Serviços (2023)</p>
+    </section>
 
+    <!-- PROFISSÃO -->
+    <section id="profissao" class="mb-5">
+      <h2>Atuação Profissional</h2>
+      <p>
+        Atualmente trabalho como freelancer em projetos de design de interfaces e experiência de
+        usuário (UX). Também busco oportunidades de estágio para aplicar meus conhecimentos em
+        projetos reais.
+      </p>
 
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-            <div class="skills-list">
-                <div class="skill-item">HTML5</div>
-                <div class="skill-item">CSS3</div>
-                <div class="skill-item">Figma</div>
-                <div class="skill-item">UI/UX Design</div>
-                <div class="skill-item">Design Responsivo</div>
-            </div>
-        </section>
-    </main>
+      <div class="projects-list">
+        <article class="project-item">
+          <h3>App Saúde – Consult Midia</h3>
+          <p>
+            Aplicativo de saúde para consultas médicas on-line, permitindo agendamento, histórico
+            médico, receitas e integração com biometria facial.
+          </p>
+        </article>
 
-    <footer>
-        <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
-    </footer>
+        <article class="project-item">
+          <h3>Site de Personal Trainer – Miridan</h3>
+          <p>
+            Site com serviços, planos de treino, dicas de saúde e blog com artigos sobre fitness.
+          </p>
+        </article>
+
+        <article class="project-item">
+          <h3>Conecta Info – Atendimento ao Cliente</h3>
+          <p>
+            Vendas de acessórios para celular e computador, confecção de documentos, impressões e
+            digitalizações com atendimento completo.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="mb-5">
+      <h2>Habilidades</h2>
+      <div class="skills-list">
+        <div class="skill-item">HTML5</div>
+        <div class="skill-item">CSS3</div>
+        <div class="skill-item">Figma</div>
+        <div class="skill-item">UI/UX Design</div>
+        <div class="skill-item">Design Responsivo</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer class="text-center py-4 small text-muted border-top">
+    © 2025 Meu Portfólio. Todos os direitos reservados.
+  </footer>
 </body>
 </html>
